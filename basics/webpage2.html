@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Webpage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section {
+            height: 100vh;
+            /* 100% of viewport height */
+            display: grid;
+            place-items: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        h1 {
+            font-size: 5rem;
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        h1>span {
+            font-weight: lighter;
+        }
+        #s1 {
+            background-image: url('background image.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .leftcol{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 4rem;
+        }
+        .leftcol div:nth-child(1){
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+        .leftcol a {
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: white;
+            font-family: sans-serif;
+            font-weight: bolder;
+        }
+        .leftcol img {
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+        .cta {
+            font-family: 1.5rem !important;
+            padding: .5rem 3rem;
+            color: #0090e3 !important;
+            background-color: white;
+            border-radius: 5rem;
+        }
+
+        .intro {
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(174, 174, 174);
+            gap: 2rem;
+            padding: 10rem 3rem;
+            width: 40%;
+        }
+        .intro h2 {
+            font-size: 4rem;
+            color: rgb(65, 65, 250)
+        }
+        .intro p {
+            font-size: 2rem;
+            color: rgba(0, 0, 0, 0.884);
+        }
+        .owners{
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            padding: 2rem;
+        }
+        .owners .i1 {
+            align-self: flex-start;
+            border-radius: 3rem;
+        }
+        .owners .i2 {
+            align-self: flex-end;
+            border-radius: 3rem;
+        }
+        .c2 {
+            gap: 3rem;
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <section id="s1">
+            <div class="container">
+                <div class="leftcol">
+                    <div>
+                        <img src="logo.png" alt="logo" height="64" width="64">
+                        <a href="#">Zimcore<br>Hubs</a>
+                    </div>
+                    <h1>
+                        <span>Changing the world</span><br>one app at a time
+                    </h1>
+                    <div>
+                        <a class="cta" href="#">Learn more</a>
+                    </div>
+                </div>
+                <div class="rightcol">
+                    <img src="hero.png" alt="hero" height="600">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container c2">
+                <div class="intro">
+                        <h2>Our Company Story</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex incidunt quod laborum sunt hic
+                            quisquam tempore, deleniti, mollitia unde, ab aut provident corrupti maxime porro?</p>
+                </div>
+                <div class="owners">
+                    <img class="i1" src="person1sitting.png" alt="" height="400">
+                    <img class="i2" src="person2sitting.png" alt="" height="400">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h2>Our Service</h2>
+                <div class="services">
+                    <div class="card">
+                        <img src="" alt="">
+                        <h3>App Consultancy</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, voluptatum.</p>
+                    </div>
+                    <div class="card">
+                        <img src="" alt="">
+                        <h3>UX and UI design</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="card">
+                        <img src="" alt="">
+                        <h3>App Development</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> 
+                    Dolor facere vero soluta, totam aut ipsa<br>
+                    architecto recusandae nesciunt,<br>
+                     autem aperiam perferendis velit repudiandae reprehenderit accusamus.
+                </h2>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="leftcol">
+                    <div>
+                        <h2>Connect With Us</h2>
+                        <h4>Twitter</h4>
+                        <h4>Facebook</h4>
+                        <h4>Instagram</h4>
+                    </div>
+                </div>
+                <div class="rightcol">
+                    <div>
+                        <h3>Mailing Adress</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus?</p>
+
+                        <h3>Email Adress</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                        <h3>Phone Number</h3>
+                        <p>(123) 456 7890</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
